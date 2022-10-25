@@ -1,11 +1,11 @@
 *.qpf
 *.qsf
 *.bak
-simulation\*
-work\*
-incremental_db\*
-db\*
-output_files\*
+simulation\
+work\
+incremental_db\
+db\
+output_files\
 .vscode
 *.txt
 transcript
