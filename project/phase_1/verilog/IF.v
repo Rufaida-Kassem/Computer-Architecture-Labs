@@ -1,8 +1,7 @@
 module pcCircuit #(parameter addressWidth = 32) (
-    clk, rst, programStartAdd, addR
+    clk, rst, addR
   );
   input clk, rst;
-  input [addressWidth - 1 : 0] programStartAdd;
   output reg [addressWidth - 1 : 0] addR;
   reg [addressWidth - 1 : 0] pc;
 
@@ -11,7 +10,7 @@ module pcCircuit #(parameter addressWidth = 32) (
   begin
     if(rst)
     begin
-      pc <= programStartAdd;
+      pc <= 32'h20;
     end
     else if (clk)
     begin
